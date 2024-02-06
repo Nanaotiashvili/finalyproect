@@ -4,6 +4,7 @@
     margin: 0 auto;
     @media (max-width:1600px) {width: 95%;}
     @media (max-width:1400px) {width: 90%;}
+    @media (max-width:900px) {width: 80%;};
 }
 @mixin myflex(
     $direction: row,
@@ -16,4 +17,20 @@
     justify-content: $justify;
     align-items: $align;
     flex-wrap: $wrap;
+}
+@mixin box {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width:900px) { width: 30px; height:30px}
+}
+@mixin fontnaturals {
+    font-family: Yellowtail;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }

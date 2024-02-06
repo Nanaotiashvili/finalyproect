@@ -1,14 +1,17 @@
 header {
     background-color: rgba(255, 255, 255, 0.90);
     padding: 69px 162px;
+    @media (max-width:1400px) {width: 90%;};
+    @media (max-width:900px) {width: 80%;};
     .container {
     @include mycontainer;
     @include myflex;
     gap: 130px;
-    @media (max-width:1400px) {width: 90%;};
         .logo {
             max-width: 200px;
             @include myflex;
+            @media (max-width:1400px) {width: 90%;};
+            @media (max-width:900px) {width: 100px;};
            
             h1 {
                 color: #274C5B;
@@ -16,13 +19,16 @@ header {
                 font-size: 38px;
                 font-style: normal;
                 font-weight: 700;
-                line-height: normal;    
+                line-height: normal; 
+                @media (max-width:900px) {font-size: 20px;;};   
             }
         }
         nav {
-            @media (max-width:700px) {
+            @media (max-width:1400px) {width: 90%;};
+            @media (max-width:1200px) {
                 display: none;
             }
+
             ul {
                 @include myflex;
                 gap:50px;
@@ -39,39 +45,31 @@ header {
         .fa-chevron-down {
             display: none;
             cursor: pointer;
-            @media ( max-width:700px) {
+            @media ( max-width:1200px) {
                 display: block;
             }
         }
         .icons {
             @include myflex;
             gap: 30px;
+            @media (max-width:1400px) {width: 90%;};
             .search {
                 display: flex;
                 justify-content: flex-end;
                 border-radius: 36px;
                 background-color: #FAFAFA;
                 .box1 { 
-                    width: 56px;
-                    height: 56px;
-                    border-radius: 50%;
+                    @include box;
                     background-color: #7EB693;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    
                 }
             }
             .cart {
                 @include myflex;
                 gap: 12px;
                 .box2 {
-                    width: 56px;
-                    height: 56px;
-                    border-radius: 50%;
+                    @include box;
                     background-color:#274C5B;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                 }
                 h2 {
                     color: #274C5B;
