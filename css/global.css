@@ -58,4 +58,129 @@ table {
 
 a {
   text-decoration: none;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 69px 162px;
+}
+header .container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 130px;
+}
+@media (max-width: 1600px) {
+  header .container {
+    width: 95%;
+  }
+}
+@media (max-width: 1400px) {
+  header .container {
+    width: 90%;
+  }
+}
+@media (max-width: 1400px) {
+  header .container {
+    width: 90%;
+  }
+}
+header .container .logo {
+  max-width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+header .container .logo h1 {
+  color: #274C5B;
+  font-family: Roboto;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media (max-width: 700px) {
+  header .container nav {
+    display: none;
+  }
+}
+header .container nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 50px;
+}
+header .container nav ul a {
+  color: #274C5B;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+header .container .fa-chevron-down {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  header .container .fa-chevron-down {
+    display: block;
+  }
+}
+header .container .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+header .container .icons .search {
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 36px;
+  background-color: #FAFAFA;
+}
+header .container .icons .search .box1 {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #7EB693;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .container .icons .cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+header .container .icons .cart .box2 {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #274C5B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .container .icons .cart h2 {
+  color: #274C5B;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }/*# sourceMappingURL=global.css.map */

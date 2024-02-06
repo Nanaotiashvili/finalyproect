@@ -1,0 +1,88 @@
+header {
+    background-color: rgba(255, 255, 255, 0.90);
+    padding: 69px 162px;
+    .container {
+    @include mycontainer;
+    @include myflex;
+    gap: 130px;
+    @media (max-width:1400px) {width: 90%;};
+        .logo {
+            max-width: 200px;
+            @include myflex;
+           
+            h1 {
+                color: #274C5B;
+                font-family: Roboto;
+                font-size: 38px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;    
+            }
+        }
+        nav {
+            @media (max-width:700px) {
+                display: none;
+            }
+            ul {
+                @include myflex;
+                gap:50px;
+                a {
+                    color: #274C5B;
+                    font-family: Roboto;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+        }
+        .fa-chevron-down {
+            display: none;
+            cursor: pointer;
+            @media ( max-width:700px) {
+                display: block;
+            }
+        }
+        .icons {
+            @include myflex;
+            gap: 30px;
+            .search {
+                display: flex;
+                justify-content: flex-end;
+                border-radius: 36px;
+                background-color: #FAFAFA;
+                .box1 { 
+                    width: 56px;
+                    height: 56px;
+                    border-radius: 50%;
+                    background-color: #7EB693;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .cart {
+                @include myflex;
+                gap: 12px;
+                .box2 {
+                    width: 56px;
+                    height: 56px;
+                    border-radius: 50%;
+                    background-color:#274C5B;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                h2 {
+                    color: #274C5B;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+            }
+
+        }
+    }
+}
