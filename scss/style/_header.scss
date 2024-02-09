@@ -1,31 +1,32 @@
 header {
     background-color: rgba(255, 255, 255, 0.90);
-    padding: 69px 162px;
-    @media (max-width:1400px) {width: 90%;};
-    @media (max-width:900px) {width: 80%;};
+    padding: 69px 0;
     .container {
     @include mycontainer;
     @include myflex;
     gap: 130px;
-        .logo {
+    @media (max-width:1400px){gap:80px}
+    @media (max-width:550px){gap:30px}
+           .logo {
             max-width: 200px;
             @include myflex;
-            @media (max-width:1400px) {width: 90%;};
-            @media (max-width:900px) {width: 100px;};
-           
-            h1 {
-                color: #274C5B;
-                font-family: Roboto;
-                font-size: 38px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal; 
-                @media (max-width:900px) {font-size: 20px;;};   
+            @media (max-width:1200px) {width:150px}
+            @media (max-width:550px) {width:80px}
+                h1 {
+                    color: #274C5B;
+                    font-family: Roboto;
+                    font-size: 38px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal; 
+                    @media (max-width:900px) {font-size: 20px};
+                    @media (max-width:550px) {font-size: 15px};    
+                }
             }
-        }
         nav {
             @media (max-width:1400px) {width: 90%;};
-            @media (max-width:1200px) {
+            @media (max-width:1200px) {width: 85%;};
+            @media (max-width:900px) {
                 display: none;
             }
 
@@ -45,14 +46,17 @@ header {
         .fa-chevron-down {
             display: none;
             cursor: pointer;
-            @media ( max-width:1200px) {
+            @media ( max-width:900px) {
                 display: block;
             }
         }
         .icons {
-            @include myflex;
+            @include myflex (row,flex-end); 
             gap: 30px;
-            @media (max-width:1400px) {width: 90%;};
+            @media (max-width:1400px) {width: 90%};
+            @media (max-width:1200px) {gap:15px};
+            @media (max-width:550px) {width: 80%};
+
             .search {
                 display: flex;
                 justify-content: flex-end;
@@ -67,6 +71,7 @@ header {
             .cart {
                 @include myflex;
                 gap: 12px;
+                @media (max-width:1400px) {width: 90%;};
                 .box2 {
                     @include box;
                     background-color:#274C5B;
@@ -78,6 +83,8 @@ header {
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
+                    @media (max-width:1400px) {font-size: 15px;};
+                    @media (max-width:550px) {font-size: 10px;}
                 }
             }
 

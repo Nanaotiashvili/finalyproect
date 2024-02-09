@@ -1,26 +1,33 @@
 .s-1 {
-    background-image: url(../images/Photo1.png);
+    background-image: url(../images/Back.png), url(../images/Photo1.png);
     background-color: #E3F1E9;
-    background-size: cover;
-    background-position: center;
-    height:898px;
+    background-size:cover, 60% ;
+    background-position:center, right;
+    background-repeat: no-repeat;
     .text1 {
         max-width: 730px;
-        padding-left: 260px;
+        margin-left: 160px;
         padding-top: 247px;
+        @media (max-width:1100px) {width:90%};
+        @media (max-width:900px) {width:80%}
+        @media (max-width:550px) {margin-left:80px;}
         h2 {
             @include fontnaturals;
             color: #68A47F;
+            @media (max-width:1400px) {width: 90%;};
+            @media (max-width:1100px) {font-size: 20px}
+
         }
-        p {color: #274C5B;
+        h3 {color: #274C5B;
             font-family: Roboto;
             font-size: 70px;
             font-style: normal;
             font-weight: 800;
             line-height: normal;
-            @media (max-width:1200px) {
-                font-size: 40px
-            }
+            @media (max-width:1400px) {width: 90%};
+            @media (max-width:1100px) {font-size: 40px};
+            @media (max-width:900px) {font-size: 30px};
+           
         }
         input[type="submit"] {
             display: flex;
@@ -33,6 +40,7 @@
             background-color: #EFD372;
             &:hover {
                 background-color: orange;
+            @media (max-width:1100px) {width: 80%;};
             }
         }
     }
