@@ -38,10 +38,45 @@
             gap: 10px;
             border-radius: 16px;
             background-color: #EFD372;
+            color: #274C5B;
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
             &:hover {
                 background-color: orange;
             @media (max-width:1100px) {width: 80%;};
             }
         }
+    }
+}
+.container {
+    @include mycontainer;
+    .natural {
+        background-image: url(../images/natural.jpg);
+        background-color:  #F96893;
+        width: 682.244px;
+        height: 367px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        h2 {
+            color: #FFF;
+            font-family: Yellowtail;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        h3 {
+            color: #FFF;
+            font-family: Roboto;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+
+
     }
 }
