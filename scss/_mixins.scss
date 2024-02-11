@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 @mixin mycontainer {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
     @media (max-width:1400px) {width: 95%;}
     @media (max-width:1300px) {width: 90%;}
-    @media (max-width:900px) {width: 85%;}
-    @media (max-width:550px) {width: 80%;}
+    @media (max-width:1150px) {width: 85%;}
+    @media (max-width:900px) {width: 80%;}
+    @media (max-width:550px) {width: 75%;}
     
 }
 @mixin myflex(
@@ -31,7 +33,7 @@
     @media (max-width:550px) { width: 20px; height:20px}
 }
 @mixin fontnaturals {
-    font-family: Yellowtail;
+    font-family: 'Yellowtail', cursive;
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
