@@ -5,7 +5,8 @@ header {
     @include mycontainer;
     @include myflex;
     gap: 130px;
-    @media (max-width:1400px){gap:80px}
+    @media (max-width:1400px){gap:54px}
+    @media (max-width:1060px){margin: 0 auto}
     @media (max-width:550px){gap:30px}
            .logo {
             max-width: 200px;
@@ -26,13 +27,15 @@ header {
         nav {
             @media (max-width:1400px) {width: 90%;};
             @media (max-width:1200px) {width: 85%;};
-            @media (max-width:900px) {
+            @media (max-width:950px) {
                 display: none;
             }
 
             ul {
                 @include myflex;
                 gap:50px;
+                @media (max-width:1060px) {gap:30px}
+
                 a {
                     color: #274C5B;
                     font-family: Roboto;
@@ -46,7 +49,7 @@ header {
         .fa-chevron-down {
             display: none;
             cursor: pointer;
-            @media ( max-width:900px) {
+            @media ( max-width:950px) {
                 display: block;
             }
         }

@@ -1,0 +1,83 @@
+.s-5{
+    background-color: #274C5B;
+    ;
+    .container5 {
+        @include mycontainer;
+        @include myflex (column, center);
+        .offer {
+            @include myflex;
+        }
+        .fourcard{
+            @include myflex;
+            .card4 {
+                @include myflex (column, flex-start, flex-start);
+                gap:20px;
+                max-width: 335px;
+                max-height: 483px;
+                border-radius: 30px;
+                //background-color: #F9F8F8;
+                ;
+                .box4 {
+                    //width: Hug (96px);
+                    //height: Hug (31px);
+                    width: auto;
+                    height: auto;
+                    padding: 5px, 12px, 6px, 12px;
+                    border-radius: 8px;
+                    gap: 10px;
+                    background-color: #274C5B;
+                    h4 {
+                        font-family: Open Sans;
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: 20px;
+                        letter-spacing: 0em;
+                        text-align: center;
+                        color:#FFFFFF;
+                    }
+
+                }
+                .imgresp {
+                    width: 335.23px;
+                    height: 324px;
+                }
+                h3 {
+                    font-family: Roboto;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 23px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color:#274C5B;
+                }
+                .price {
+                    @include myflex;
+                    gap:81px;
+                    .pr1 {
+                        @include myflex (row,flex-start);
+                        h5 {
+                            font-family: Open Sans;
+                            font-size: 15px;
+                            font-weight: 600;
+                            line-height: 20px;
+                            letter-spacing: 0em;
+                            text-align: center;
+                            color: #B8B8B8;
+                        }
+                        h6 {
+                            font-family: Open Sans;
+                            font-size: 18px;
+                            font-weight: 700;
+                            line-height: 25px;
+                            letter-spacing: 0em;
+                            text-align: center;
+                            color:#274C5B;
+                        }
+                    }
+                }
+                
+            }
+        
+        }
+    }    
+}
