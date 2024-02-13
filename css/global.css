@@ -1217,6 +1217,156 @@ header .container .icons .cart h2 {
   }
 }
 
+footer .container7 {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 92px;
+}
+@media (max-width: 1400px) {
+  footer .container7 {
+    width: 95%;
+  }
+}
+@media (max-width: 1150px) {
+  footer .container7 {
+    width: 92%;
+  }
+}
+@media (max-width: 820px) {
+  footer .container7 {
+    width: 85%;
+  }
+}
+@media (max-width: 550px) {
+  footer .container7 {
+    width: 75%;
+  }
+}
+footer .container7 .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  gap: 32px;
+}
+footer .container7 .contact h1 {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #274C5B;
+}
+footer .container7 .contact .email {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+}
+footer .container7 .contact .email h3 {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #525C60;
+}
+footer .container7 .contact .email a {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #525C60;
+}
+footer .container7 .org {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 23px;
+  max-width: 543px;
+  Height: 245.72px;
+}
+footer .container7 .org .logo1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+footer .container7 .org .logo1 h1 {
+  font-family: Roboto;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #274C5B;
+}
+footer .container7 .org .text8 p {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #525C60;
+}
+footer .container7 .org .fouricon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+footer .container7 .pages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 24px;
+}
+footer .container7 .pages h1 {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #274C5B;
+}
+footer .container7 .pages .ategs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+footer .container7 .pages .ategs a {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #525C60;
+}
+
 .s-5 {
   background-color: #274C5B;
   padding-top: 201px;

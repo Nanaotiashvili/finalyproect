@@ -1,0 +1,101 @@
+footer {
+    .container7 {
+        @include mycontainer;
+        @include myflex;
+        gap:92px;
+        .contact {
+            @include myflex (column, flex-end, flex-end);
+            gap:32px;
+            h1 {
+                font-family: Roboto;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 35px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #274C5B;
+
+            }
+            .email {
+                @include myflex (column, flex-end, flex-end);
+                h3 {
+                    font-family: Open Sans;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    letter-spacing: 0em;
+                    text-align: right;
+                    color: #525C60;
+                }
+                a{
+                    font-family: Open Sans;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    letter-spacing: 0em;
+                    text-align: right;
+                    color: #525C60;
+                }
+                
+            }           
+        }
+        .org{
+            @include myflex (column,space-between, center);
+            gap:23px;
+            max-width: 543px;
+            Height:245.72px;
+            .logo1 {
+                @include myflex (row, center, center);
+                h1 {
+                    font-family: Roboto;
+                    font-size: 38px;
+                    font-weight: 700;
+                    line-height: 45px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #274C5B;
+                 }
+            }     
+            .text8 {
+                p {
+                    font-family: Open Sans;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color:#525C60;
+                }
+            }
+            .fouricon {
+                @include myflex (row, center,center);
+                gap:15px;
+            }    
+        }
+        .pages {
+            @include myflex (column,space-between,flex-start);
+            gap:24px;
+            h1 {
+                font-family: Roboto;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 35px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #274C5B;
+            }    
+            .ategs {
+                @include myflex (column, space-between, flex-start);
+                a {
+                    font-family: Open Sans;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 49px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #525C60;
+                }
+            }          
+        }
+    }
+}
