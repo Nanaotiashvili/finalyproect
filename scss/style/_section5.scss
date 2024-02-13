@@ -1,18 +1,21 @@
 .s-5{
     background-color: #274C5B;
     ;
+    padding-top: 201px;
+    padding-bottom: 201px;
+    @media (max-width:410px) {padding: 20px;};
     .container5 {
         @include mycontainer;
-        @include myflex (column, center);
+        @include myflex (column, space-between, flex-start);
         gap:50px;
         @media (max-width:650px) {margin:0};
         .offer {
             @include myflex(row,space-between,flex-end);
-            gap: 560px;
+            gap: 460px;
             @media (max-width:1015px) {gap:300px};
             @media (max-width:900px) {gap:200px};
             @media (max-width:650px) {gap:100px};
-            
+            @media (max-width:410px) {gap:20px};
             .text6 {
                 h2 { 
                     @include fontnaturals;
