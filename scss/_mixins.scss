@@ -39,6 +39,7 @@
     font-weight: 400;
     line-height: normal;
     @media (max-width:900px) {font-size: 20px;}
+    @media (max-width:650px) {font-size: 10px;}
 }
 @mixin box2 {
     width: 582.244px;

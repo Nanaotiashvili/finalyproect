@@ -4,19 +4,66 @@
     .container5 {
         @include mycontainer;
         @include myflex (column, center);
+        gap:50px;
+        @media (max-width:650px) {margin:0};
         .offer {
-            @include myflex;
+            @include myflex(row,space-between,flex-end);
+            gap: 560px;
+            @media (max-width:1015px) {gap:300px};
+            @media (max-width:900px) {gap:200px};
+            @media (max-width:650px) {gap:100px};
+            
+            .text6 {
+                h2 { 
+                    @include fontnaturals;
+                    color: #7EB693;
+                }
+                h1 {font-family: Roboto;
+                    font-size: 50px;
+                    font-weight: 800;
+                    line-height: 59px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #FFFFFF;
+                    @media (max-width:1015px) {font-size: 30px;};
+                    @media (max-width:900px) {font-size: 20px;};
+                    @media (max-width:650px) {font-size: 10px;};
+                }
+            }
+            input[type="submit"] {
+                display: flex;
+                width: 256px;
+                height: 79px;
+                padding: 28px, 399px, 28px, 39px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 16px;
+                background-color: #EFD372;
+                color:#274C5B;
+                font-family: Roboto;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                &:hover {
+                    background-color: orange;
+                @media (max-width:1100px) {width: 80%;};
+                @media (max-width:900px) {width: 70%;}
+                }
+            }
         }
         .fourcard{
             @include myflex;
+            gap:20px;
+            @media (max-width:1350px) {flex-direction: column; justify-content:center};
             .card4 {
-                @include myflex (column, flex-start, flex-start);
-                gap:20px;
+                @include myflex (column, flex-start, flex-start);              
                 max-width: 335px;
                 max-height: 483px;
                 border-radius: 30px;
-                //background-color: #F9F8F8;
-                ;
+                background-color: #F9F8F8;
                 .box4 {
                     //width: Hug (96px);
                     //height: Hug (31px);
@@ -26,6 +73,7 @@
                     border-radius: 8px;
                     gap: 10px;
                     background-color: #274C5B;
+                    margin: 30px;
                     h4 {
                         font-family: Open Sans;
                         font-size: 15px;
@@ -38,8 +86,12 @@
 
                 }
                 .imgresp {
-                    width: 335.23px;
-                    height: 324px;
+                    width: 310px;
+                    height:310px;
+                    display: block;
+                    margin-right: auto;
+                    margin-right: auto;  
+                    width: 50%;                 
                 }
                 h3 {
                     font-family: Roboto;
@@ -49,10 +101,12 @@
                     letter-spacing: 0em;
                     text-align: center;
                     color:#274C5B;
+                    margin-left: 30px;
                 }
                 .price {
                     @include myflex;
                     gap:81px;
+                    margin-left: 30px;
                     .pr1 {
                         @include myflex (row,flex-start);
                         h5 {
@@ -74,10 +128,8 @@
                             color:#274C5B;
                         }
                     }
-                }
-                
-            }
-        
+                }                
+            }        
         }
     }    
 }
