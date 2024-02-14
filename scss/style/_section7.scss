@@ -1,0 +1,401 @@
+.s-7{
+    padding: (57px 103px);
+    @media (max-width:720px) {padding: 0;}
+    .container8 {
+        @include mycontainer;
+        @include myflex (row,space-evenly,center,wrap);
+        gap:50px;
+        .cards7 {
+            background-image: url(../images/salat.png);
+            width: 600px;
+            height: 424px;
+            border-radius: 30px;
+            @include myflex (column, flex-start,space-between );
+            gap: 96px;
+            padding: (46px 35px 0 35px);
+            @media (max-width:720px) {padding: 0};
+            .nov25 {
+                display: flex;
+                flex-direction: column;
+                width: 62px;
+                height:62px;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                background-color: #FFFFFF;
+                h4 {
+                    font-family: Roboto;
+                    font-size: 20px;
+                    font-weight: 800;
+                    line-height: 23px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                }
+                h5 {
+                    font-family: Roboto;
+                    font-size: 25px;
+                    font-weight: 800;
+                    line-height: 29px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                }
+            }
+            .box7{
+                max-width: 500px;
+                //height: 200px;
+                padding: (34px 37px);
+                border-radius: 31px;
+                gap: 10px;
+                background-color: #FFFFFF; 
+                @media (max-width:720px) {padding: 0px; width: 100%;}
+                @media (max-width:550px) {width: 100%;}
+                .text8 {
+                    @include myflex (column, flex-start,space-between);
+                    gap: 19px;
+                    .n1{
+                        @include myflex (row, flex-start);
+                        h4 {
+                            font-family: Roboto;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 21px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: #274C5B;
+                        }  
+                    }
+                    .n2 {
+                        h3 {
+                            font-family: Roboto;
+                            font-size: 25px;
+                            font-weight: 800;
+                            line-height: 29px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color:#274C5B;
+                            @media (max-width: 720px){font-size:15px};
+                        }
+                        p {
+                            font-family: Open Sans;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 30px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: #525C60;
+                            @media (max-width: 720px){font-size:9px};
+                        }
+                    }
+                    .n3 {
+                        @include myflex (row, flex-start);
+                        h3{
+                            font-family: Roboto;
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 23px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color:#274C5B;
+                            @media (max-width: 720px){font-size:10px};
+                        }
+
+                    }
+                }
+            }
+        }
+        .cards72 {
+            background-image: url(../images/tomato2.png);
+            width: 600px;
+            height: 424px;
+            border-radius: 30px;
+            @include myflex (column, flex-start,space-between );
+            gap: 96px;
+            padding: (46px 35px 0 35px);
+            @media (max-width:720px) {padding: 0};
+            .nov25 {
+                display: flex;
+                flex-direction: column;
+                width: 62px;
+                height:62px;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                background-color: #FFFFFF;
+                h4 {
+                    font-family: Roboto;
+                    font-size: 20px;
+                    font-weight: 800;
+                    line-height: 23px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                }
+                h5 {
+                    font-family: Roboto;
+                    font-size: 25px;
+                    font-weight: 800;
+                    line-height: 29px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                }
+            }
+            .box7{
+                max-width: 500px;
+                //height: 200px;
+                padding: (34px 37px);
+                border-radius: 31px;
+                gap: 10px;
+                background-color: #FFFFFF; 
+                @media (max-width:720px) {padding: 0px; width: 100%;}
+                @media (max-width:550px) {width: 100%;}
+                .text8 {
+                    @include myflex (column, flex-start,space-between);
+                    gap: 19px;
+                    .n1{
+                        @include myflex (row, flex-start);
+                        h4 {
+                            font-family: Roboto;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 21px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: #274C5B;
+                        }  
+                    }
+                    .n2 {
+                        h3 {
+                            font-family: Roboto;
+                            font-size: 25px;
+                            font-weight: 800;
+                            line-height: 29px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color:#274C5B;
+                            @media (max-width: 720px){font-size:15px};
+                        }
+                        p {
+                            font-family: Open Sans;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 30px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: #525C60;
+                            @media (max-width: 720px){font-size:9px};
+                        }
+                    }
+                    .n3 {
+                        @include myflex (row, flex-start);
+                        h3{
+                            font-family: Roboto;
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 23px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color:#274C5B;
+                            @media (max-width: 720px){font-size:10px};
+                        }
+
+                    }
+                }
+            }
+        }
+        .cards73 {
+            background-image: url(../images/avokado.png);
+            width: 600px;
+            height: 424px;
+            border-radius: 30px;
+            @include myflex (column, flex-start,space-between );
+            gap: 96px;
+            padding: (46px 35px 0 35px);
+            @media (max-width:720px) {padding: 0};
+            .nov25 {
+                display: flex;
+                flex-direction: column;
+                width: 62px;
+                height:62px;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                background-color: #FFFFFF;
+                h4 {
+                    font-family: Roboto;
+                    font-size: 20px;
+                    font-weight: 800;
+                    line-height: 23px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                }
+                h5 {
+                    font-family: Roboto;
+                    font-size: 25px;
+                    font-weight: 800;
+                    line-height: 29px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                }
+            }
+            .box7{
+                max-width: 500px;
+                //height: 200px;
+                padding: (34px 37px);
+                border-radius: 31px;
+                gap: 10px;
+                background-color: #FFFFFF; 
+                @media (max-width:720px) {padding: 0px; width: 100%;}
+                @media (max-width:550px) {width: 100%;}
+                .text8 {
+                    @include myflex (column, flex-start,space-between);
+                    gap: 19px;
+                    .n1{
+                        @include myflex (row, flex-start);
+                        h4 {
+                            font-family: Roboto;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 21px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: #274C5B;
+                        }  
+                    }
+                    .n2 {
+                        h3 {
+                            font-family: Roboto;
+                            font-size: 25px;
+                            font-weight: 800;
+                            line-height: 29px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color:#274C5B;
+                            @media (max-width: 720px){font-size:15px};
+                        }
+                        p {
+                            font-family: Open Sans;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 30px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: #525C60;
+                            @media (max-width: 720px){font-size:9px};
+                        }
+                    }
+                    .n3 {
+                        @include myflex (row, flex-start);
+                        h3{
+                            font-family: Roboto;
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 23px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color:#274C5B;
+                            @media (max-width: 720px){font-size:10px};
+                        }
+
+                    }
+                }
+            }
+        }
+        .cards74 {
+            background-image: url(../images/man.png);
+            width: 600px;
+            height: 424px;
+            border-radius: 30px;
+            @include myflex (column, flex-start,space-between );
+            gap: 96px;
+            padding: (46px 35px 0 35px);
+            @media (max-width:720px) {padding: 0};
+            .nov25 {
+                display: flex;
+                flex-direction: column;
+                width: 62px;
+                height:62px;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                background-color: #FFFFFF;
+                h4 {
+                    font-family: Roboto;
+                    font-size: 20px;
+                    font-weight: 800;
+                    line-height: 23px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                }
+                h5 {
+                    font-family: Roboto;
+                    font-size: 25px;
+                    font-weight: 800;
+                    line-height: 29px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                }
+            }
+            .box7{
+                max-width: 500px;
+                //height: 200px;
+                padding: (34px 37px);
+                border-radius: 31px;
+                gap: 10px;
+                background-color: #FFFFFF; 
+                @media (max-width:720px) {padding: 0px; width: 100%;}
+                @media (max-width:550px) {width: 100%;}
+                .text8 {
+                    @include myflex (column, flex-start,space-between);
+                    gap: 19px;
+                    .n1{
+                        @include myflex (row, flex-start);
+                        h4 {
+                            font-family: Roboto;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 21px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: #274C5B;
+                        }  
+                    }
+                    .n2 {
+                        h3 {
+                            font-family: Roboto;
+                            font-size: 25px;
+                            font-weight: 800;
+                            line-height: 29px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color:#274C5B;
+                            @media (max-width: 720px){font-size:15px};
+                        }
+                        p {
+                            font-family: Open Sans;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 30px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: #525C60;
+                            @media (max-width: 720px){font-size:9px};
+                        }
+                    }
+                    .n3 {
+                        @include myflex (row, flex-start);
+                        h3{
+                            font-family: Roboto;
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 23px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color:#274C5B;
+                            @media (max-width: 720px){font-size:10px};
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
