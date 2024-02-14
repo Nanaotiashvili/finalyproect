@@ -305,6 +305,11 @@ header .container .icons .cart h2 {
   background-position: center, right;
   background-repeat: no-repeat;
 }
+@media (max-width: 950px) {
+  .s-1 {
+    background-size: 40%, 60%;
+  }
+}
 .s-1 .text1 {
   max-width: 730px;
   margin-left: 160px;
@@ -1223,10 +1228,11 @@ footer .container7 {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   flex-wrap: nowrap;
-  gap: 92px;
+  gap: 41px;
+  max-width: 1400px;
 }
 @media (max-width: 1400px) {
   footer .container7 {
@@ -1246,6 +1252,13 @@ footer .container7 {
 @media (max-width: 550px) {
   footer .container7 {
     width: 75%;
+  }
+}
+@media (max-width: 950px) {
+  footer .container7 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 footer .container7 .contact {
@@ -1289,6 +1302,11 @@ footer .container7 .contact .email a {
   letter-spacing: 0em;
   text-align: right;
   color: #525C60;
+}
+@media (max-width: 950px) {
+  footer .container7 .line {
+    display: none;
+  }
 }
 footer .container7 .org {
   display: flex;

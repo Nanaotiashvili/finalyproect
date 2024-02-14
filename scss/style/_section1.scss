@@ -4,6 +4,8 @@
     background-size:cover, 60% ;
     background-position:center, right;
     background-repeat: no-repeat;
+    @media (max-width:950px)
+    { background-size:40%, 60% ; }
     .text1 {
         max-width: 730px;
         margin-left: 160px;
