@@ -1,0 +1,81 @@
+.s-8 {
+    padding-top: 115px;
+    .container9 {
+        @include mycontainer;
+        @include myflex (row,space-between,flex-start);
+        @media (max-width: 850px) {flex-direction: column};
+        gap:55px;
+        @media (max-width: 570px) {gap:25px}
+        .imgfruit {
+            background-image: url(../images/fruit.jpg);
+            width: 623px;
+            height: 640px;
+            border-radius: 20px;
+            @media (max-width: 730px) {width: 500px; background-size: contain; background-repeat: no-repeat; gap:20px} ;
+            @media (max-width: 570px) {width: 300px;height:250px}
+            @media (max-width: 370px) {max-width: 200px; max-height:210px; background-size: contain};
+        }
+        .right8 {
+            @include myflex (column,space-between,flex-start);
+            gap:24px;
+            width: 702px;
+            padding-top: 10px;
+            @media (max-width: 700px) {max-width: 500px};
+            @media (max-width: 570px) {max-width: 300px};
+            @media (max-width: 370px) {max-width: 200px};
+            .text8 {
+                h1 { 
+                    font-family: Roboto;
+                    font-size: 50px;
+                    font-weight: 800;
+                    line-height: 59px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #274C5B;
+                    @media (max-width: 850px) {font-size: 30px};
+                }
+                p {
+                    font-family: Open Sans;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #525C60;
+                }
+            }
+            .join {
+                @include myflex (column,flex-start,space-between);
+
+                .mail {
+                    @include myflex (row,flex-start);
+                    gap:30px;
+                    .cont {
+                        h3 {
+                            font-family: Roboto;
+                            font-size: 25px;
+                            font-weight: 800;
+                            line-height: 29px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: #274C5B;
+                        }
+                        a {
+                            font-family: Open Sans;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 30px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: #525C60;
+                        }
+                    }
+                }
+            }
+            .icon8 {
+                @include myflex (row, flex-start,center);
+                gap:45px;
+            }
+        }
+    }
+}

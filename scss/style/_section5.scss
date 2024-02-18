@@ -3,11 +3,13 @@
     ;
     padding-top: 201px;
     padding-bottom: 201px;
-    @media (max-width:410px) {padding: 20px;};
+    @media (max-width:410px) {padding: 20px};
+    @media (max-width:315px) {display: none};
     .container5 {
         @include mycontainer;
         @include myflex (column, space-between, flex-start);
         gap:50px;
+        @media (max-width:720px) {flex-direction:column; justify-content: center; align-items: center; wrap:wrap;};
         @media (max-width:650px) {margin:0};
         .offer {
             @include myflex(row,space-between,flex-end);
@@ -58,7 +60,7 @@
             }
         }
         .fourcard{
-            @include myflex;
+            @include myflex (row,center,center);
             gap:20px;
             @media (max-width:1350px) {flex-direction: column; justify-content:center};
             @media (max-width:360px) {flex-direction: column; justify-content:flex-start};
@@ -95,7 +97,9 @@
                     display: block;
                     margin-right: auto;
                     margin-right: auto;  
-                    width: 50%;                 
+                    width: 50%;       
+                    //@media (max-width:315px) {object-fit: contain; width:215px; height:215px};    
+                    @media (max-width:315px) {display: none;}      
                 }
                 h3 {
                     font-family: Roboto;
